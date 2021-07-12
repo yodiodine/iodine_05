@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="css/header.css">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+    let ismobNavOpen = false;
+    //mobile-bar 클릭
+    $(".mobile-bar").click(()=>{
+        if(!ismobNavOpen){
+            //css 조절
+            $(".mobile-nav").css("transform","scale(1)").css("border-radius","0");
+            $(".mobile-nav-bg").css("transform","scale(10)");
+
+            $(".mobile-bar div").css("background-color","#fff");
+            $(".mobile-bar div").eq(0).css("transform","rotate(45deg) translate(3px,-3px)");
+            $(".mobile-bar div").eq(1).css("transform","rotateY(90deg)");
+            $(".mobile-bar div").eq(2).css("transform","rotate(-45deg) translate(3px,3px)");
+            //nav가 열려있는 경우 스크롤 방지
+            $("html,body").css("overflow","hidden");
+            ismobNavOpen = true;
+        }else{
+            //css 조절
+            $(".mobile-nav").css("transform","scale(0)").css("border-radius","100%");
+            $(".mobile-nav-bg").css("transform","scale(0)");
+
+            $(".mobile-bar div").css("background-color","var(--main-color)");
+            $(".mobile-bar div").eq(0).css("transform","rotate(0deg) translate(0px,0px)");
+            $(".mobile-bar div").eq(1).css("transform","rotateY(0deg)");
+            $(".mobile-bar div").eq(2).css("transform","rotate(0deg) translate(0px,0px)");
+            
+            $("html,body").css("overflow","auto");
+            ismobNavOpen = false;
+        }
+        
+    })
+</script>
+
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+        </ul>
+        <div class="header-logo"><a href="index.html"></a></div>
+    </nav>
+    <div class="mobile-bar">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <nav class="mobile-nav">
+        <div class="mobile-nav-bg mobile-nav-bg1"></div>
+        <div class="mobile-nav-bg mobile-nav-bg2"></div>
+        <ul>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+        </ul>
+    </nav>
+</header>
+
+
