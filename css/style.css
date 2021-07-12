@@ -97,6 +97,21 @@ header .mobile-nav ul li a{
 }
 */
 
+.view-more{
+    position: absolute;
+    width: 200px;height: 50px;text-align: center;line-height: 50px;
+    background-color: var(--main-color);
+    border-radius: 30px 35% 30px 20%;
+    transition: all 0.5s;
+}
+.view-more a{display: block;}
+.view-more a span{
+    color: #fff;font-family: 'Encode Sans SC', sans-serif;font-size: 20px;
+}
+.view-more:hover{
+    width: 210px;height: 70px;line-height: 70px;
+    border-radius: 50px 50% 60px 50%;
+}
 
 /*main-1*/
 #main-visual{
@@ -408,6 +423,19 @@ header .mobile-nav ul li a{
 #main-news .news-box .news-arrow li:nth-child(2){
     background: url(../img/arrow_sprite.png) 0 84px;
 }
+#main-news .news-box>p{
+    color: #fff;font-size: 40px;font-family: 'Encode Sans SC', sans-serif;
+    padding: 0 20px;
+    text-align: center;
+}
+#main-news .news-box .view-more{
+    bottom: -12%;left: 50%;
+    transform: translate(-50%);
+}
+#main-news .news-box .view-more:hover{
+    bottom: -14%;
+}
+
 /*main-4*/
 #main-contact{
     position: relative;
@@ -577,6 +605,17 @@ footer .footer-box .footer-rights li:first-child{padding-bottom: 10px;}
 
 /*미디어쿼리 768~1023 ~태블릿*/
 @media screen and (min-width:768px) and (max-width:1023px){
+    
+    .view-more{
+        width: 180px;height: 45px;line-height: 45px;
+    }
+    .view-more a span{
+        font-size: 18px;
+    }
+    .view-more:hover{
+        width: 200px;height: 55px;line-height: 55px;
+    }
+
     /*
     header nav .menu li:nth-child(2){margin-right: 15%;}
     header nav .menu li:nth-child(3){margin-left: 15%;}
@@ -640,7 +679,17 @@ footer .footer-box .footer-rights li:first-child{padding-bottom: 10px;}
     #main-news .news-box .news-arrow li:nth-child(2){
         background-position: 0 100px
     }
-    
+    #main-news .news-box>p{
+        font-size: 35px;
+        margin-top: -10px
+    }
+    #main-news .news-box .view-more{
+        bottom: -9%;
+    }
+    #main-news .news-box .view-more:hover{
+        bottom: -10%;
+    }
+
     #main-contact .contact-box>div.contact-white-cir{
         top: 200px;
         width: 50vw;height: 50vw;
@@ -662,6 +711,16 @@ footer .footer-box .footer-rights li:first-child{padding-bottom: 10px;}
 }
 /*미디어쿼리 ~767 ~모바일*/
 @media screen and (max-width:767px){
+    .view-more{
+        width: 26vw;height: 7vw;line-height: 7vw;
+    }
+    .view-more a span{
+        font-size: 2vw;
+    }
+    .view-more:hover{
+        width: 28vw;height: 8vw;line-height: 8vw;
+    }
+    
     /*
     header nav .menu{
         display: none
@@ -759,13 +818,16 @@ footer .footer-box .footer-rights li:first-child{padding-bottom: 10px;}
         display: none;
     }
     
-    #main-news{
+    #main-news {
         height: 80vw;
     }
     #main-news .news-box h1{
         font-size: 6vw;
         padding: 20px;
         text-align: center;
+    }
+    #main-news .news-box .news-slide{
+        margin-top: -30px
     }
     #main-news .news-box .news-slide .news-list{
         width: 155%;height: 40vw;
@@ -787,8 +849,30 @@ footer .footer-box .footer-rights li:first-child{padding-bottom: 10px;}
         display: none;
     }
     #main-news .news-box .news-arrow{
-        top: 41vw;
+        top:38vw;
     }
+    #main-news .news-box .news-arrow li{
+        width: 5vw;height: 5vw;
+    }
+    #main-news .news-box .news-arrow li:nth-child(1){
+        background: url(../img/arrow_sprite.png) 0 0;
+        background-size: 15vw;
+    }
+    #main-news .news-box .news-arrow li:nth-child(2){
+        background: url(../img/arrow_sprite.png) 0 10vw;
+        background-size: 15vw
+    }
+    #main-news .news-box>p{
+        font-size: 4vw;
+        margin-top: -20px
+    }
+    #main-news .news-box .view-more{
+        bottom: -15%;
+    }
+    #main-news .news-box .view-more:hover{
+        bottom: -16%;
+    }
+
     
     #main-contact .contact-box h1{
         font-size: 10vw;
@@ -811,7 +895,6 @@ footer .footer-box .footer-rights li:first-child{padding-bottom: 10px;}
         top: 180px;right: 20px;
         width: 50vw;height: 50vw;
     }
-    
     #main-contact .contact-box form{
         padding: 30px;
     }

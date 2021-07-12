@@ -1,10 +1,16 @@
 <link rel="stylesheet" href="css/header.css">
 <script src="js/jquery-3.6.0.min.js"></script>
 <script>
+    $(function(){
+        //처음 화면 로드 시 nav가 등장하지 않도록 
+        $(".mobile-nav").hide();
+    })
+    
     let ismobNavOpen = false;
     //mobile-bar 클릭
     $(".mobile-bar").click(()=>{
         if(!ismobNavOpen){
+            $(".mobile-nav").show();
             //css 조절
             $(".mobile-nav").css("transform","scale(1)").css("border-radius","0");
             $(".mobile-nav-bg").css("transform","scale(10)");
