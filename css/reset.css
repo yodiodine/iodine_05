@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Pacifico&display=swap');
 
 *{margin: 0;padding: 0;box-sizing: border-box;}
 li{list-style: none}
 a{text-decoration:none;color: #000;}
-img{vertical-align: top;}
+img{vertical-align: middle;}
 html,body{height: 100%;font-family: 'Noto Sans', sans-serif;}
 body{background: url(../img/bg1.jpg)}
 

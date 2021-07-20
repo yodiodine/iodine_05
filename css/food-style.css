@@ -1,0 +1,100 @@
+body,html{}
+#food-wrap .container{
+    position: relative;
+    width: 100%;height: 100vh;min-height: 900px;
+    cursor: url(../scroll.cur), auto;
+    
+    overflow:hidden;
+}
+#food-wrap .container h1{
+    position: relative;top: 40px;left:50%;
+    width: 500px;height: 100px;
+    font-family: 'Pacifico', cursive;font-size: 40px;
+    background-color: #000; color: #fff;
+    text-align: center;line-height: 90px;
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px black;
+    transform: translate(-50%);
+}
+#food-wrap .container:nth-child(3) h1{
+    width: 600px;
+}
+#food-wrap .container .menu-list{
+    position: relative;top: -100px; left: 000%;
+    width: 700%;height: 100%; min-height: 900px;
+    display: flex;
+}
+#food-wrap .container:nth-child(1) .menu-list{width: 700%}
+#food-wrap .container:nth-child(2) .menu-list{width: 500%;}
+#food-wrap .container:nth-child(3) .menu-list{width: 300%}
+
+
+#food-wrap .container .menu-list .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+#food-wrap .container .menu-list .box img{
+    padding: 30px 0;
+}
+#food-wrap .container .menu-list .box p{
+    font-family: 'Pacifico', cursive;font-size: 50px;
+}
+#food-wrap .container:nth-child(1),
+#food-wrap .container:nth-child(3){background-color: var(--main-color)}
+
+/*미디어쿼리 768~1023 ~태블릿*/
+@media screen and (min-width:768px) and (max-width:1023px){
+}
+/*미디어쿼리 ~767 ~모바일*/
+@media screen and (max-width:767px){
+    #food-wrap .container{
+        min-height: 700px;
+    }
+    #food-wrap .container h1{
+        width: 85%;height: 22vw;
+        font-size: 6.5vw;
+        line-height: 20vw;
+    }
+    #food-wrap .container .menu-list{
+        top: -50px;
+        min-height: 650px;
+    }
+    #food-wrap .container:nth-child(3) h1{
+        width: 90%
+    }
+    #food-wrap .container .menu-list .box img{
+        width: 50vw;
+        padding: 0;
+    }
+    #food-wrap .container .menu-list .box p{
+        font-size: 10vw;
+    }
+}
+/*미디어쿼리 ~424 ~모바일*/
+@media screen and (max-width:424px){
+    #food-wrap .container{
+        min-height: 400px;
+    }
+    #food-wrap .container h1{
+        width: 85%;height: 22vw;
+        font-size: 6.5vw;
+        line-height: 20vw;
+    }
+    #food-wrap .container .menu-list{
+        top: -45px;
+        min-height: 450px;
+    }
+    #food-wrap .container:nth-child(3) h1{
+        width: 90%
+    }
+    #food-wrap .container .menu-list .box img{
+        width: 50vw;
+        padding: 0;
+    }
+    #food-wrap .container .menu-list .box p{
+        font-size: 8vw;
+    }
+}

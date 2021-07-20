@@ -1,0 +1,121 @@
+#food-wrap{
+    position: relative;
+    width: 100%;
+    background-color: var(--main-color)
+}
+#food-wrap .box{
+    position: relative;
+    height: 800px;max-width: 1280px;
+    margin: 0 auto;padding: 50px 0px;
+    overflow: hidden;
+}
+#food-wrap .box.burger-box .list{width:3000px}
+#food-wrap .box.side-box .list{width:2200px}
+#food-wrap .box.drink-box .list{width:2600px}
+#food-wrap .box.beerwine-box .list{width:1300px}
+#food-wrap .box.fordog-box .list{width:900px}
+
+#food-wrap .box.burger-box h1{width: 650px;}
+#food-wrap .box.side-box h1{width: 570px;}
+#food-wrap .box.drink-box h1{width: 300px;}
+#food-wrap .box.beerwine-box h1{width: 530px;}
+#food-wrap .box.fordog-box h1{width: 360px}
+#food-wrap .box h1{
+    font-family: 'Pacifico', cursive;height: 120px; font-size: 50px;
+    text-align: center;line-height: 105px;
+    margin: 0 auto;
+    background-color:#000;color: #fff;
+    border: 7px solid #fff;
+}
+#food-wrap .box .list-wrap{
+    height: 600px;
+    cursor: url(../scroll.cur), auto;
+}
+#food-wrap .box .list{
+    padding: 30px 20px;
+    position: absolute;
+    top: 30%;left: 450px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 550px;
+    -ms-overflow-style:none; /*엣지, IE*/
+    scroll-width:none; /*파이어폭스*/
+}
+#food-wrap .box .list::-webkit-scrollbar{
+    display: none; /*크롬 사파리 오페라*/
+}
+#food-wrap .box .list div{
+    width: 400px;
+    text-align: center;
+    margin: 0 10px;
+    display: inline-block;
+}
+#food-wrap .box .list div img{width: 100%;}
+#food-wrap .box .list div p{
+    padding: 5px 0;font-weight: bold;font-family: 'Pacifico', cursive;font-size: 35px
+}
+#food-wrap .box .list div p:nth-child(3){
+    font-size: 25px
+}
+
+
+/*미디어쿼리 768~1023 ~태블릿*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    
+    #food-wrap .box{
+        height: 700px;
+    }
+    #food-wrap .box.burger-box h1{width: 520px;}
+    #food-wrap .box.side-box h1{width: 450px;}
+    #food-wrap .box.drink-box h1{width: 250px;}
+    #food-wrap .box.beerwine-box h1{width: 420px;}
+    #food-wrap .box.fordog-box h1{width: 280px}
+    #food-wrap .box h1{font-size: 40px;}
+    #food-wrap .box .list{
+        height:420px;
+        top: 30%;
+    }
+    #food-wrap .box .list div{
+        width: 350px;
+    }
+    #food-wrap .box .list div p{
+        font-size: 30px
+    }
+    #food-wrap .box .list div p:nth-child(3){
+        font-size: 25px
+    }
+}
+/*미디어쿼리 ~767 ~모바일*/
+@media screen and (max-width:767px){
+    
+    #food-wrap .box{
+        height: 75vw;
+        padding: 10px 0px;
+    }
+    #food-wrap .box.burger-box h1{width: 80%;}
+    #food-wrap .box.side-box h1{width: 70%;}
+    #food-wrap .box.drink-box h1{width: 40%;}
+    #food-wrap .box.beerwine-box h1{width: 65%;}
+    #food-wrap .box.fordog-box h1{width: 45%}
+    #food-wrap .box h1{
+        height: 15vw;
+        font-size: 6vw;line-height: 12.5vw;
+        border: 5px solid #fff;
+    }
+    #food-wrap .box .list{
+        top: 25vw;height: 50vw;
+        padding: 0px 20px;
+    }
+    #food-wrap .box .list div{
+        width: 30vw;
+        margin: 0 20px;
+    }
+    #food-wrap .box .list div p{
+        padding: 0;
+        font-size: 3.5vw
+    }
+    #food-wrap .box .list div p:nth-child(3){
+        font-size: 2.5vw
+    }
+}
