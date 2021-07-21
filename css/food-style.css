@@ -3,9 +3,18 @@ body,html{}
     position: relative;
     width: 100%;height: 100vh;min-height: 900px;
     cursor: url(../scroll.cur), auto;
-    
+    perspective: 2000px;
     overflow:hidden;
 }
+#food-wrap .container .bg1,#food-wrap .container .bg2,#food-wrap .container .bg3{
+    width: 100%;height: 100%;
+    position: absolute;top: 0;left: 0;
+    transform: translateZ(300px);
+}
+#food-wrap .container .bg1{background: url(../img/bg-pt4.png);background-size: 20%;background-attachment:fixed;}
+#food-wrap .container .bg2{background: url(../img/bg-pt1.png);background-size: 20%;background-attachment:fixed;}
+#food-wrap .container .bg3{background: url(../img/bg-pt4.png);background-size: 20%;background-attachment:fixed;}
+
 #food-wrap .container h1{
     position: relative;top: 40px;left:50%;
     width: 500px;height: 100px;
@@ -24,10 +33,9 @@ body,html{}
     width: 700%;height: 100%; min-height: 900px;
     display: flex;
 }
-#food-wrap .container:nth-child(1) .menu-list{width: 700%}
+#food-wrap .container:nth-child(1) .menu-list{width: 700%;}
 #food-wrap .container:nth-child(2) .menu-list{width: 500%;}
-#food-wrap .container:nth-child(3) .menu-list{width: 300%}
-
+#food-wrap .container:nth-child(3) .menu-list{width: 300%;}
 
 #food-wrap .container .menu-list .box{
     display: flex;
@@ -38,9 +46,19 @@ body,html{}
 }
 #food-wrap .container .menu-list .box img{
     padding: 30px 0;
+    animation: burgermove 3s infinite ease-in-out;
+}
+@keyframes burgermove{
+    0%{transform: scale(0.8) rotate(10deg)}
+    50%{transform: scale(1.1) rotate(-10deg)}
+    100%{transform: scale(0.8) rotate(10deg)}
 }
 #food-wrap .container .menu-list .box p{
-    font-family: 'Pacifico', cursive;font-size: 50px;
+    font-family: 'Pacifico', cursive;font-size: 70px;font-weight: bold;
+    text-shadow: 0px 0px 7px white,
+        0px 0px 7px white,
+        0px 0px 7px white,
+        0px 0px 7px white;
 }
 #food-wrap .container:nth-child(1),
 #food-wrap .container:nth-child(3){background-color: var(--main-color)}
