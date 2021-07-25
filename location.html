@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/location-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/location-script.js"></script>
+    <script>
+        $(function(){
+            $("#header-wrap").load("header.html");
+            $("#footer-wrap").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header-wrap"></div>
+    
+    <div id="location-wrap">
+        <div class="name-box">
+            <h1>Location</h1>
+        </div>
+        <div class="shop-wrap">
+            <ul class="shop-list">
+                <li>
+                    <div><span class="shop-name">Gangnam</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14453.921960222162!2d127.01814121238023!3d37.49698254662034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1589ef2d775%3A0xcb38f532752ed8e0!2z7ImQ7J207YGs7ImRIOqwleuCqOygkA!5e0!3m2!1sko!2skr!4v1626945520581!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>영업시간 : 10:00~22:00</p><p>딜리버리 / 픽업 : 10:30~22:00</p></li>
+                            <li><span>address</span><p>서울시 강남구 강남대로 452</p><p>대연빌딩 1층</p><p>(구주소)서울시 강남구 역삼동 809-13</p><p>TEL 02-553-5576</p></li>
+                            <li><span>parking</span><p>30분 당 3000원</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><span class="shop-name">Cheongdam</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202557.74060042299!2d126.89367585285316!3d37.508750782569855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca389a14a120b%3A0x7915572c89550242!2z7ImQ7J207YGs7ImRIOyyreuLtOygkA!5e0!3m2!1sko!2skr!4v1626941832954!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>영업시간 : 11:00~22:00</p><p>10:30~22:00 (토,일)</p><p>딜리버리 / 픽업 : 11:00~22:00</p><p>10:30~22:00 (토,일)</p></li>
+                            <li><span>address</span><p>서울시 강남구 도산대로 327</p><p>SGF청담타워 1층</p><p>(구주소)서울시 강남구 신사동 652-16</p><p>TEL 02-510-5217</p></li>
+                            <li><span>parking</span><p>본인 주차 시 30분 3000원</p><p>발렛 이용시 30분 3000원+주차비 3000원</p><p>초과 시 10분당 1000원 부과</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><span class="shop-name">Doota</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202557.74060042299!2d126.89367585285316!3d37.508750782569855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe81dc24fad4c610!2z7ImQ7J207YGs7ImRIOuRkO2DgOygkA!5e0!3m2!1sko!2skr!4v1626941855338!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>영업시간 : 10:00~21:30</p><p>딜리버리 / 픽업 : 10:30~21:30</p></li>
+                            <li><span>address</span><p>서울시 중구 장충단로 275</p><p>두타몰 1층 001호</p><p>(구주소) 서울시 중구 을지로6가 18-12</p><p>TEL 02-3398-4003</p></li>
+                            <li><span>parking</span><p>기본 30분 2100원</p><p>초과 시 10분 당 700원</p><p>구매금액 상관없이 2시간 무료</p><p>8만원 이상 구매 시 2만원 당 30분 추가 혜택</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><span class="shop-name">AK Plaza</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202893.630503143!2d126.98276091640622!3d37.384795300000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5802df811081%3A0x12f240f105020cde!2z7ImQ7J207YGs7ImRIOu2hOuLueygkA!5e0!3m2!1sko!2skr!4v1626941895204!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>영업시간 : 10:00~21:30 10:00~22:00 (토,일)</p><p>딜리버리 / 픽업 : 10:30~22:00</p></li>
+                            <li><span>address</span><p>경기도 성남시 분당구 황새울로 360, 42</p><p>AK플라자 분당점 1층</p><p>(서현역 4번 출구)</p><p>TEL 031-707-0501</p></li>
+                            <li><span>parking</span><p>기본 30분 1000원</p><p>초과 시 10분 당 1000원</p><p>구매금액 상관없이 2시간 무료</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><span class="shop-name">Starfield</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.0945685785086!2d126.89282191527218!3d37.6469806797829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9713f899ecd1%3A0x79520dd9db149c1f!2z7ImQ7J207YGs7ImRIOyKpO2DgO2VhOuTnOqzoOyWkeygkA!5e0!3m2!1sko!2skr!4v1626941935886!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>영업시간 : 10:00~21:00</p><p>딜리버리 / 픽업 : 10:30~21:00</p></li>
+                            <li><span>address</span><p>경기도 고양시 덕양구 고양대로 1955</p><p>(동산동) 스타필드 고양점 1층</p><p>(3호선 삼송역 3번출구에서 도보 10분 소요)</p><p>TEL 031-5173-1068</p></li>
+                            <li><span>parking</span><p>무료</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><span class="shop-name">Incheon Airport</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119276.41174423353!2d126.4912130626364!3d37.42581524013262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf395e53fbf82d7a!2z7ImQ7J207YGs7ImRIOyduOyynOqzte2VrSDsoJwy7YSw66-464SQ7KCQ!5e0!3m2!1sko!2skr!4v1626941966719!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>임시 휴업</p></li>
+                            <li><span>address</span><p>인천광역시 중구 공항로 272</p><p>인천공항 제2여객터미널 지하1층</p><p>22-202호</p><p>TEL 032-743-0100</p></li>
+                            <li><span>parking</span><p>기본 30분 당 1200원</p><p>초과 시 15분 당 600원 부과</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><span class="shop-name">Central City</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d521243.26053255383!2d126.66521170416672!3d37.37844475180687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca16c07d26477%3A0x2f240e45980db174!2z7ImQ7J207YGs7ImRIOyEvO2KuOuftOyLnO2LsOygkA!5e0!3m2!1sko!2skr!4v1626941995289!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>영업시간 : 09:00~21:30</p><p>딜리버리 / 픽업 : 09:30~21:30</p></li>
+                            <li><span>address</span><p>서울시 서초구 신반포로 176, 1층</p><p>119호 (반포동 센트럴시티 빌딩)</p><p>TEL 02-6282-3220</p></li>
+                            <li><span>parking</span><p>10분 당 1000원</p><p>신세계 5만원 이상 구매 시 1시간 무료</p><p>신세계 10만원 이상 구매 시 2시간 무료</p><p>신세계 15만원 이상 구매 시 3시간 무료</p><p>파미에 3만원 이상 구매 시 1시간무료</p><p>파미에 5만원 이상 구매 시 2시간 무료</p><p>파미에 10만원 이상 구매 시 3시간 무료</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><span class="shop-name">Songdo</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d521243.26053255383!2d126.66521170416672!3d37.37844475180687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b77584802abff%3A0x8a5f13e4b7aaafb5!2z7ImQ7J207YGs7ImRIOyGoeuPhOygkA!5e0!3m2!1sko!2skr!4v1626942015126!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>영업시간 : 11:00~21:30 (평일)</p><p>10:30~22:00 (주말)</p><p>딜리버리 / 픽업 : 11:00~22:00 (평일)</p><p>10:30~22:00 (주말)</p></li>
+                            <li><span>address</span><p>인천 연수구 송도과학로16번길 33-2</p><p>1층 (송도동 174-3 B동 1층)</p><p>TEL 032-310-9464</p></li>
+                            <li><span>parking</span><p>무료</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><span class="shop-name">Seomyeon</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1447373.3547168942!2d128.295356090132!3d34.609160251187106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb0d034ac903%3A0xe142a60d27f7987c!2z7ImQ7J207YGs7ImRIOyEnOuptOygkA!5e0!3m2!1sko!2skr!4v1626942035045!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>영업시간 : 11:00~22:00(일~목)</p><p>11:00~22:30(금, 토)</p><p>(금,토 30분 연장)</p><p>딜리버리 / 픽업 : 11:00~22:00</p></li>
+                            <li><span>address</span><p>부산 부산진구 중앙대로 672</p><p>부전동 227-2 삼정타워 1층</p><p>TEL 051-520-3707</p></li>
+                            <li><span>parking</span><p>기본 30분 무료</p><p>초과 시 10분당 1000원 부과</p><p>1만원 이상 구매 시 1시간 무료</p><p>3만원 이상 구매 시 2시간 무료</p><p>5만원 이상 구매 시 3시간 무료</p><p>10만원 이상 구매 시 4시간 무료</p><p>20만원 이상 구매 시 5시간 무료</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><span class="shop-name">Jonggak</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d544751.7936311497!2d126.61652934391188!3d37.409300688203146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca39d1f6e8865%3A0x9f6cbd46b64d5f90!2z7ImQ7J207YGs7ImRIOyiheqwgeygkA!5e0!3m2!1sko!2skr!4v1626942050639!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>영업시간 : 10:00~21:00</p><p>딜리버리 / 픽업 : 10:00~21:00</p></li>
+                            <li><span>address</span><p>서울 종로구 종로 33 그랑서울 1층</p><p>TEL 02-2158-7575</p></li>
+                            <li><span>parking</span><p>기본 30분 2000원</p><p>초과 시 10분 당 1000원</p><p>구매금액 상관없이 2시간 무료</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><span class="shop-name">Times Square</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d544751.7936311497!2d126.61652934391188!3d37.409300688203146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x862a16881aade452!2z7ImQ7J207YGs7ImRIO2DgOyehOyKpO2AmOyWtOygkA!5e0!3m2!1sko!2skr!4v1626942064965!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>영업시간 : 10:30~22:00/p><p>딜리버리 / 픽업 : 10:30~22:00</p></li>
+                            <li><span>address</span><p>서울특별시 영등포구 영중로 15</p><p>타임스퀘어 1층 (102-1호)</p><p>TEL 02-2635-0104</p></li>
+                            <li><span>parking</span><p>기본 30분 무료</p><p>초과 시 10분당 1000원 부과</p><p>2만원 이상 구매 시 30분 무료</p><p>3만원 이상 구매 시 1시간 무료</p><p>5만원 이상 구매 시 2시간 무료</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><span class="shop-name">IParkmall</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d544751.7936311497!2d126.61652934391188!3d37.409300688203146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae3103546b8acff9!2z7ImQ7J207YGs7ImRIOyaqeyCsOyVhOydtO2MjO2BrOuqsOygkA!5e0!3m2!1sko!2skr!4v1626942079977!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>영업시간 : 10:30~22:00</p><p>딜리버리 / 픽업 : 10:30~22:00</p></li>
+                            <li><span>address</span><p>용산구 한강대로 23길 55 1층</p></li>
+                            <li><span>parking</span><p>10분 당 1000원</p><p>구매금액 상관없이 2시간 무료</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><span class="shop-name">Dongseongro</span><div class="down-arrow"></div></div>
+                    <div class="shop-detail">
+                        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1562541.8035529638!2d126.9069024851543!3d35.961086985725544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x84710624bb857693!2z7ImQ7J207YGs7ImRIOuMgOq1rOuPmeyEseuhnOygkA!5e0!3m2!1sko!2skr!4v1626942103140!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                        <ul>
+                            <li><span>Time</span><p>영업시간 : 10:30~22:00</p><p>딜리버리 / 픽업 : 10:30~22:00</p></li>
+                            <li><span>address</span><p>대구 중구 동성로6길 61</p></li>
+                            <li><span>parking</span><p>기본 30분 1800원</p><p>추가 10분 당 600원</p><p>1만원 이상 구매 시 1시간 무료</p><p>3만원 이상 구매 시 2시간 무료</p><p>6만원 이상 구매 시 3시간 무료</p></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="footer-wrap"></div>
+</body>
+</html>

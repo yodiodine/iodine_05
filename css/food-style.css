@@ -34,8 +34,8 @@ body,html{}
     display: flex;
 }
 #food-wrap .container:nth-child(1) .menu-list{width: 700%;}
-#food-wrap .container:nth-child(2) .menu-list{width: 500%;}
-#food-wrap .container:nth-child(3) .menu-list{width: 300%;}
+#food-wrap .container:nth-child(2) .menu-list{width: 300%;}
+#food-wrap .container:nth-child(3) .menu-list{width: 400%;}
 
 #food-wrap .container .menu-list .box{
     display: flex;
