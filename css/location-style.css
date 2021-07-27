@@ -1,4 +1,8 @@
-#location-wrap{position: relative;}
+#location-wrap{
+    position: relative;
+    background: url(../img/bg-pt2.png);
+    background-size: 20%;
+}
 #location-wrap .name-box{
     position: relative;
     width: 100%;height: 400px;
