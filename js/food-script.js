@@ -37,7 +37,7 @@ $(function(){
     })
     
     //마우스흴 이벤트
-    $(".box img").on("scroll mousewheel",function(e,delta){
+    $(".box img").on("mousewheel DOMMouseScroll",function(e,delta){
         
         delta = e.originalEvent.wheelDelta;
         let currentIdx;       
@@ -68,7 +68,6 @@ $(function(){
         $(".menu-list").css("left","-"+(0)*$(".box").width()+"px")
         
     })
-    
     
     //횡스크롤 함수
     function horizontal(menuList,tempIdx,currentIdx,e,delta){
@@ -106,4 +105,30 @@ $(function(){
                 }
             }
     }
+    
+    //오른쪽 사이드바 클릭 이벤트
+    let selectedIdx = 0;
+    let isScrolling = true;
+    $(".sideMenu div").on("click",function(e){
+        selectedIdx = $(this).index();
+        isScrolling = false;
+        $(".sideMenu div").removeClass();
+        window.scrollTo(0,$(".container").eq(selectedIdx).offset().top);
+        $(".sideMenu div").eq(selectedIdx).addClass("selected");
+        window.setTimeout(function(){isScrolling=true;},500);
+    })
+    $(window).on("scroll",function(){
+        
+        if($(window).scrollTop()>=0 && $(window).scrollTop()<480&&isScrolling){
+            selectedIdx = 0;
+        }else if($(window).scrollTop()>=980&&$(window).scrollTop()<1380&&isScrolling){
+            selectedIdx = 1;
+        }else if($(window).scrollTop()>=1880 && $(window).scrollTop()<2280&&isScrolling){
+            selectedIdx = 2;
+        }
+        
+        $(".sideMenu div").removeClass();
+        $(".sideMenu div").eq(selectedIdx).addClass("selected");
+    })
+    
 })
