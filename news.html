@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/news-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/news-script.js"></script>
+    <script>
+        $(function(){
+            $("#header-wrap").load("header.html");
+            $("#footer-wrap").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header-wrap"></div>
+    
+    <div id="news-wrap">
+        <div class="name-box">
+            <h1>NEWS</h1>
+        </div>
+        <div class="news-body">
+            <div class="news-box">
+            <!--jquery 배열로 news-card삽입됨-->
+            </div>
+            <div class="moreBtn">
+                <div></div>
+                <span>MORE</span>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div id="footer-wrap"></div>
+</body>
+</html>

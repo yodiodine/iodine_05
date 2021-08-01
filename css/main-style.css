@@ -611,7 +611,7 @@ footer .footer-box .footer-rights li:first-child{padding-bottom: 10px;}
 
 
 /*미디어쿼리 768~1023 ~태블릿*/
-@media screen and (min-width:768px) and (max-width:1023px){
+@media screen and (min-width:768px) and (max-width:1024px){
     
     .view-more{
         width: 180px;height: 45px;line-height: 45px;
@@ -716,8 +716,8 @@ footer .footer-box .footer-rights li:first-child{padding-bottom: 10px;}
     
 
 }
-/*미디어쿼리 ~767 ~모바일*/
-@media screen and (max-width:767px){
+/*미디어쿼리 ~768 ~모바일*/
+@media screen and (max-width:768px){
     .view-more{
         width: 26vw;height: 7vw;line-height: 7vw;
     }

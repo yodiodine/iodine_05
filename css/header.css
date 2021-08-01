@@ -121,12 +121,12 @@ header .mobile-nav ul li a:hover:after{
     transform: scaleX(1);
 }
 /*미디어쿼리 768~1023 ~태블릿*/
-@media screen and (min-width:768px) and (max-width:1023px){
+@media screen and (min-width:768px) and (max-width:1024px){
     header nav .menu li:nth-child(2){margin-right: 15%;}
     header nav .menu li:nth-child(3){margin-left: 15%;}
 }
 /*미디어쿼리 ~767 ~모바일*/
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     header nav .menu{
         display: none
     }

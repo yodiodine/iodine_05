@@ -1,0 +1,134 @@
+#news-wrap .news-body{
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+#news-wrap .name-box{
+    position: relative;
+    width: 100%;height: 400px;
+    background: url(../img/fooddrink_hdr.jpg) no-repeat center center;
+    background-size: cover;
+    background-color: var(--main-color);border: 10px solid var(--main-color);
+}
+#news-wrap .name-box h1{
+    position: absolute;
+    bottom: -55px;left: 50%;transform: translate(-50%);
+    width: 500px;
+    background-color: #fff;
+    font-size: 50px;font-weight: bold;text-align: center;font-family: 'Pacifico', cursive;
+    user-select: none;
+    border: 10px solid var(--main-color);
+}
+#news-wrap .news-box{
+    position: relative;
+    padding: 100px 20px;
+    height: 1000px; overflow: hidden;   
+}
+#news-wrap .news-box:after{
+    content: '';
+    position: absolute;z-index: 1;
+    bottom: 0;left: -4%;
+    width: 104%;height: 150px;
+    background: linear-gradient(180deg, transparent 30%, #f4f4f4 80%);
+}
+#news-wrap .news-box .news-card{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    position: relative;
+    width: 30.1%;height: 500px;
+    margin: 1.6%;
+    
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    
+    overflow: hidden;
+    cursor: pointer;
+}
+#news-wrap .news-box .news-card img{width: 100%;transition: all 0.3s;}
+#news-wrap .news-box .news-card:hover img{transform: scale(1.1)}
+#news-wrap .news-box .news-card h1{
+    width: 100%;
+    background-color: #fff;
+    font-size: 28px;text-align: center;font-family: 'Encode Sans SC', sans-serif;text-decoration: underline;
+    padding: 5%;
+    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#news-wrap .news-box .news-card span{
+    display: block;
+    font-size: 15px;font-family: 'Encode Sans SC', sans-serif;text-align: center;
+    padding-bottom: 5%;
+}
+#news-wrap .moreBtn{
+    width:100px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+#news-wrap .moreBtn div{
+    width: 42px;height: 42px;
+    margin: 0 auto;
+    background: url(../img/arrow_sprite.png) 0 42px;
+    transform: rotate(180deg);
+}
+#news-wrap .moreBtn span{font-family: 'Encode Sans SC', sans-serif;font-size: 24px}
+
+
+/*미디어쿼리 768~1023 ~태블릿*/
+@media screen and (min-width:768px) and (max-width:1024px){
+    #news-wrap .name-box{
+        height: 300px;
+    }
+    #news-wrap .news-box{
+        height: 800px;
+    }
+    #news-wrap .news-box .news-card{
+        height: 400px;
+    }
+    #news-wrap .news-box .news-card h1{
+        font-size: 22px;
+    }
+    #news-wrap .moreBtn span{font-size: 20px}
+}
+/*미디어쿼리 ~767 ~모바일*/
+@media screen and (max-width:768px){
+    #news-wrap .name-box{
+        height: 300px;
+    }
+    #news-wrap .name-box h1{
+        bottom: -10vw;
+        max-width: 50vw;
+        width: 80vw;
+        font-size: 8vw;
+        border: 1.5vw solid var(--main-color);
+    }
+    #news-wrap .news-box{
+        height: 800px;
+    }
+    #news-wrap .news-box .news-card{
+        width: 100%; height: 200px;
+        margin: 20px 0;
+    }
+    #news-wrap .news-box .news-card h1{
+        display: block;
+        position: absolute;bottom: 0px;right: 0;
+        padding: 4%;
+        font-size: 3.5vw;
+        background-color: rgba(255,255,255,0.7);
+    }
+    #news-wrap .news-box .news-card span{
+        position: absolute;top: 0;right: 0;
+        padding: 10px;
+        font-size: 2.5vw;
+        background-color: rgba(0,0,0,0.7);
+        color: #fff
+    }
+    #news-wrap .moreBtn span{font-size:18px}
+
+}

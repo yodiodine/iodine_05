@@ -44,8 +44,8 @@ footer .footer-box .footer-rights{
 }
 footer .footer-box .footer-rights li:first-child{padding-bottom: 10px;}
 
-/*미디어쿼리 ~767 ~모바일*/
-@media screen and (max-width:767px){
+/*미디어쿼리 ~768 ~모바일*/
+@media screen and (max-width:768px){
     footer{height: 420px;}
     footer .footer-box .footer-ul-box .footer-menu{
         font-size: 3vw;
