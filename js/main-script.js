@@ -41,14 +41,7 @@ $(function(){
     $(".story-gift").mouseleave(()=>{
         $(".story-gift p").text("GIVE THE GIFT OF SHACK!"); 
     });
-    //main 기프트카드 마우스 따라오기
-    $(document).mousemove((e)=>{
-        if(e.target == document.querySelector(".story-gift img")){
-            let x=window.innerWidth-e.pageX;
-            let y;
-            //나중에하자.
-        }
-    })
+    
     //main 좌우 클릭 슬라이드
     let clickIdxArr = [1,2,3,4,5];
     //main 뉴스 제목 배열
